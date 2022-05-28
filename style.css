@@ -10,13 +10,13 @@
 }
 
 
-.container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 200px;
-  align-items: center;
+.container {
+  background-color: darkslategray;  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  width: fit-content;
   gap: 10px 10px;
-  grid-auto-flow: row;
   border-style: double;
   border-width: 8px;
   border-radius: 10px;
@@ -29,17 +29,14 @@
 
 .playerRock { 
   grid-area: playerRock;
-  background-color: gray; 
 }
 
 .playerPaper { 
   grid-area: playerPaper;
-  background-color: blanchedalmond; 
 }
 
 .playerScissors { 
   grid-area: playerScissors;
-  background-color: darkcyan;
 
 }
 
@@ -54,15 +51,25 @@
 
 .computerRock { 
   grid-area: computerRock; 
-  background-color: gray; 
 }
 
 .computerPaper { 
   grid-area: computerPaper; 
-  background-color: blanchedalmond;
 }
 
 .computerScissors { 
   grid-area: computerScissors;
-  background-color: darkcyan; 
+}
+
+.gridButton{
+  width: 300px;
+  height: 250px;
+  padding: 0px;
+  border-width: 3px;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+#playerRockButton{
+  background-image: url(/images/rock.jpg);
 }
