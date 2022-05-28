@@ -1,0 +1,68 @@
+*{
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+#introduction{
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 200px;
+  align-items: center;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  border-style: double;
+  border-width: 8px;
+  border-radius: 10px;
+  text-align: center;
+  grid-template-areas:
+    "playerRock playerSelection computerRock"
+    "playerPaper winLoss computerPaper"
+    "playerScissors computerSelection computerScissors";
+}
+
+.playerRock { 
+  grid-area: playerRock;
+  background-color: gray; 
+}
+
+.playerPaper { 
+  grid-area: playerPaper;
+  background-color: blanchedalmond; 
+}
+
+.playerScissors { 
+  grid-area: playerScissors;
+  background-color: darkcyan;
+
+}
+
+.winLoss { grid-area: winLoss; }
+
+.playerSelection { grid-area: playerSelection; }
+
+.computerSelection { 
+  grid-area: computerSelection; 
+   
+}
+
+.computerRock { 
+  grid-area: computerRock; 
+  background-color: gray; 
+}
+
+.computerPaper { 
+  grid-area: computerPaper; 
+  background-color: blanchedalmond;
+}
+
+.computerScissors { 
+  grid-area: computerScissors;
+  background-color: darkcyan; 
+}
