@@ -19,7 +19,7 @@ html{
   background-color: rgb(244, 251, 172); 
   margin: 0 auto; 
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 100px 200px;
   border: 8px ridge rgb(27,23,255);
   border-radius: 15px;
   text-align: center;
@@ -31,7 +31,7 @@ html{
   background-color: black; 
   margin: 15px auto; 
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 100px 200px;
   width: fit-content;
   text-align: center;
   color: white;
@@ -94,6 +94,5 @@ html{
 }
 
 #results{
-  display: flex;
-  align-items: center;
+  text-align: center;
 }

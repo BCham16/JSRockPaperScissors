@@ -15,6 +15,7 @@ box-shadow: 15px 15px 10px rgb(0,0,0);
 const clearStyle = `style = 
 box shadow: none;
 `
+let score = 0;
 
 playerRock.addEventListener ('click', function() {runGame('rock')});
 playerPaper.addEventListener ('click', function() {runGame('paper')});
@@ -22,28 +23,11 @@ playerScissors.addEventListener ('click', function() {runGame('scissors')});
 
 
 function runGame(choice){
-  const playerChoice = choice;
-  
+  const playerChoice = choice;  
   console.log(playerChoice);
   computer = computerChoice();
-  gameAnimation();
   gameResult = gameResults(playerChoice, computer);
-}
-
-
-function computerChoice(){ 
-  const rnd = Math.floor(Math.random() * 3);
-  if (rnd == 0){computer = 'rock'}
-  else if (rnd == 1){computer = 'paper'}
-  else {computer = 'scissors'}
-  console.log(computer);
-  return computer;
-}
-
-function gameAnimation(){
-  setTimeout(() => {computerRock.style = animatedStyle;}, 500);
-  setTimeout(() => {computerPaper.style = animatedStyle;}, 1000);
-  setTimeout(() => {computerScissors.style = animatedStyle;}, 1500);
+  updateStandings(gameResult, playerChoice);
   setTimeout(() => {
     computerRock.style = clearStyle;
     computerPaper.style = clearStyle;
@@ -51,9 +35,26 @@ function gameAnimation(){
   }, 2000)
 }
 
+
+function computerChoice(){ 
+  const rnd = Math.floor(Math.random() * 3);
+  if (rnd == 0){
+    computer = 'rock';
+    computerRock.style = animatedStyle;
+  }
+  else if (rnd == 1){
+    computer = 'paper'
+    computerPaper.style = animatedStyle;
+}
+  else {
+    computer = 'scissors'
+    computerScissors.style = animatedStyle;
+  }
+  console.log(computer);
+  return computer;
+}
+
 function gameResults(playerChoice, computer){
-  playerChoice = playerChoice
-  computer = computer
   let gameResult = 0; 
   if (playerChoice == 'rock'){
     if (computer == 'paper'){gameResult = -1}
@@ -69,4 +70,22 @@ function gameResults(playerChoice, computer){
   }
   console.log(gameResult);
   return gameResult
+}
+
+function updateStandings(gameResult, playerChoice){
+  scoreboard = document.querySelector('#score');
+  lastGame = document.querySelector('#lastGame');
+  lastChoice = document.querySelector('#lastChoice');
+  singleGame = document.querySelector('#results');
+  
+  score += gameResult;
+
+  scoreboard.textContent = score;
+  if (gameResult == 0){singleGame.textContent = 'TIE'}
+  else if (gameResult == 1){singleGame.textContent = 'WIN'}
+  else (singleGame.textContent = 'LOST')
+
+  lastChoice.textContent = playerChoice;
+
+
 }
