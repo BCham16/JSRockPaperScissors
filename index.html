@@ -10,28 +10,54 @@
 
 <body>
   <p id="introduction">Welcome to Rock Paper Scissors!</p>
-  <div class="container">
-    <div class="playerRock">
-        <button class="gridButton" id="playerRockButton">Player Rock</button>
+
+  <div id="gameContainer">
+    <div>Choose One</div>
+    <div></div>
+    <div>Computer Choice</div>
+
+    <div>
+        <button class="playerButton" id="playerRockButton"></button>
+    </div>
+
+    <div>Player Choice</div>
+
+    <div>
+      <button class="computerButton" id="computerRockButton"></button> 
     </div>
       
-    <div class="playerPaper">
-      <button class="gridButton" id="playerPaperButton">Player Paper</button> 
+    <div>
+      <button class="playerButton" id="playerPaperButton"></button> 
     </div>
 
-    <div class="playerScissors">
-      <button class="gridButton" id="playerScissorsButton">Player Scissors</button> 
+    <div>Win/Loss (this game)</div>
+
+    <div>
+      <button class="computerButton" id="computerPaperButton"></button>  
     </div>
 
+    <div>
+      <button class="playerButton" id="playerScissorsButton"></button> 
+    </div>
 
-    <div class="winLoss">Win/Loss (this game)</div>
-    <div class="playerSelection">Player Choice</div>
-    <div class="computerSelection">Computer Choice</div>
-    <div class="computerRock">Computer Rock</div>
-    <div class="computerPaper">Computer Paper</div>
-    <div class="computerScissors">Computer Scissors</div>
-  </div>  
+    <div>Computer Choice</div>
+
+    <div>
+      <button class="computerButton" id="computerScissorsButton"></button> 
+    </div>
+
+  </div>
   
+  <div id="scoreContainer">
+    <div>Score</div>
+    <div>Last Game</div>
+    <div>Last Choice</div>
+    <div>0</div>
+    <div>Tie</div>
+    <div>n/a</div>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 
 </html>

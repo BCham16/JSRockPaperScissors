@@ -1,3 +1,7 @@
+html{
+  background-color: rgb(41, 41, 41);
+}
+
 *{
   font-family: Verdana;
   font-size: 18px;
@@ -7,69 +11,83 @@
   text-align: center;
   align-items: center;
   font-size: 30px;
+  color: white;
 }
 
-
-.container {
-  background-color: darkslategray;  
-  margin: 0 auto;
+#gameContainer {
+  background-color: rgb(244, 251, 172); 
+  margin: 0 auto; 
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  width: fit-content;
-  gap: 10px 10px;
-  border-style: double;
-  border-width: 8px;
-  border-radius: 10px;
-  text-align: center;
-  grid-template-areas:
-    "playerRock playerSelection computerRock"
-    "playerPaper winLoss computerPaper"
-    "playerScissors computerSelection computerScissors";
-}
-
-.playerRock { 
-  grid-area: playerRock;
-}
-
-.playerPaper { 
-  grid-area: playerPaper;
-}
-
-.playerScissors { 
-  grid-area: playerScissors;
-
-}
-
-.winLoss { grid-area: winLoss; }
-
-.playerSelection { grid-area: playerSelection; }
-
-.computerSelection { 
-  grid-area: computerSelection; 
-   
-}
-
-.computerRock { 
-  grid-area: computerRock; 
-}
-
-.computerPaper { 
-  grid-area: computerPaper; 
-}
-
-.computerScissors { 
-  grid-area: computerScissors;
-}
-
-.gridButton{
-  width: 300px;
-  height: 250px;
-  padding: 0px;
-  border-width: 3px;
+  grid-template-columns: 200px 200px 200px;
+  border: 8px ridge rgb(27,23,255);
   border-radius: 15px;
-  margin: 2px;
+  text-align: center;
+  width: fit-content;
+}
+
+#scoreContainer{
+  border: 5px groove;
+  background-color: black; 
+  margin: 15px auto; 
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  width: fit-content;
+  text-align: center;
+  color: white;
+}
+
+.playerButton{
+  width: 153px;
+  height: 153px;
+  padding: 0px;
+  border: 4px solid;
+  border-radius: 77px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.playerButton:hover{
+  border-color: rgb(27, 23, 255);
+  border-style: solid;
+  transition: 200ms;
+  box-shadow: 10px 10px 10px black; 
+}
+
+.computerButton{
+  width: 153px;
+  height: 153px;
+  padding: 0px;
+  border-width: 4px;
+  border-radius: 77px;
+  margin: 10px;
 }
 
 #playerRockButton{
-  background-image: url(/images/rock.jpg);
+  background-image: url(/images/Rock.jpg);
+  background-size: 145px 145px;
+}
+
+#playerPaperButton{
+  background-image: url(/images/Paper.jpg);
+  background-size: 145px 145px;
+}
+
+#playerScissorsButton{
+  background-image: url(/images/Scissors.jpg);
+  background-size: 145px 145px;
+}
+
+#computerRockButton{
+  background-image: url(/images/Rock.jpg);
+  background-size: 145px 145px;
+}
+
+#computerPaperButton{
+  background-image: url(/images/Paper.jpg);
+  background-size: 145px 145px;
+}
+
+#computerScissorsButton{
+  background-image: url(/images/Scissors.jpg);
+  background-size: 145px 145px;
 }
