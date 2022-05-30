@@ -4,16 +4,12 @@ const playerScissors = document.querySelector('#playerScissorsButton');
 const computerRock = document.querySelector('#computerRockButton')
 const computerPaper = document.querySelector('#computerPaperButton')
 const computerScissors = document.querySelector('#computerScissorsButton')
-const readyToPlay = document.querySelector('#chosenObject');
 const animatedStyle = `
 border-Style: solid;
 border-Color: green;
 border-Width: 5px;
 transition: 200ms;
 box-shadow: 15px 15px 10px rgb(0,0,0);
-`
-const clearStyle = `style = 
-box shadow: none;
 `
 let score = 0;
 
@@ -24,17 +20,16 @@ playerScissors.addEventListener ('click', function() {runGame('scissors')});
 
 function runGame(choice){
   const playerChoice = choice;  
-  console.log(playerChoice);
+  //console.log(playerChoice);
   computer = computerChoice();
   gameResult = gameResults(playerChoice, computer);
   updateStandings(gameResult, playerChoice);
   setTimeout(() => {
-    computerRock.style = clearStyle;
-    computerPaper.style = clearStyle;
-    computerScissors.style = clearStyle;
+    computerRock.style = '';
+    computerPaper.style = '';
+    computerScissors.style = '';
   }, 2000)
 }
-
 
 function computerChoice(){ 
   const rnd = Math.floor(Math.random() * 3);
@@ -50,7 +45,7 @@ function computerChoice(){
     computer = 'scissors'
     computerScissors.style = animatedStyle;
   }
-  console.log(computer);
+  //console.log(computer);
   return computer;
 }
 
@@ -68,7 +63,7 @@ function gameResults(playerChoice, computer){
     if (computer == 'rock'){gameResult = -1}
     if (computer == 'paper'){gameResult = 1}
   }
-  console.log(gameResult);
+  //console.log(gameResult);
   return gameResult
 }
 
