@@ -1,22 +1,3 @@
-const playerRock = document.querySelector('#playerRockButton');
-const playerPaper = document.querySelector('#playerPaperButton');
-const playerScissors = document.querySelector('#playerScissorsButton');
-const computerRock = document.querySelector('#computerRockButton')
-const computerPaper = document.querySelector('#computerPaperButton')
-const computerScissors = document.querySelector('#computerScissorsButton')
-const animatedStyle = `
-border-Style: solid;
-border-Color: green;
-border-Width: 5px;
-transition: 200ms;
-box-shadow: 15px 15px 10px rgb(0,0,0);
-`
-let score = 0;
-
-playerRock.addEventListener ('click', function() {runGame('rock')});
-playerPaper.addEventListener ('click', function() {runGame('paper')});
-playerScissors.addEventListener ('click', function() {runGame('scissors')});
-
 
 function runGame(choice){
   const playerChoice = choice;  
@@ -69,7 +50,6 @@ function gameResults(playerChoice, computer){
 
 function updateStandings(gameResult, playerChoice){
   scoreboard = document.querySelector('#score');
-  lastGame = document.querySelector('#lastGame');
   lastChoice = document.querySelector('#lastChoice');
   singleGame = document.querySelector('#results');
   
@@ -82,5 +62,23 @@ function updateStandings(gameResult, playerChoice){
 
   lastChoice.textContent = playerChoice;
 
-
 }
+
+const playerRock = document.querySelector('#playerRockButton');
+const playerPaper = document.querySelector('#playerPaperButton');
+const playerScissors = document.querySelector('#playerScissorsButton');
+const computerRock = document.querySelector('#computerRockButton')
+const computerPaper = document.querySelector('#computerPaperButton')
+const computerScissors = document.querySelector('#computerScissorsButton')
+const animatedStyle = `
+border-Style: solid;
+border-Color: green;
+border-Width: 5px;
+transition: 200ms;
+box-shadow: 15px 15px 10px rgb(0,0,0);
+`
+let score = 0;
+
+playerRock.addEventListener ('click', function() {runGame('rock')});
+playerPaper.addEventListener ('click', function() {runGame('paper')});
+playerScissors.addEventListener ('click', function() {runGame('scissors')});
