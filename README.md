@@ -1,4 +1,5 @@
-#Rock Paper Scissors Game!
+
+# Rock Paper Scissors Game!
 
   ### Rock Paper Scissors developed with HTML/CSS/JavaScript
   
