@@ -1,6 +1,6 @@
 #Rock Paper Scissors Game!
 
-  ### Rock Paper Scissors app developed with HTML/CSS/JavaScript
+  ### Rock Paper Scissors developed with HTML/CSS/JavaScript
   
 ![](Screenshot.png)
 
