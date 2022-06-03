@@ -11,4 +11,4 @@
  upon selection (the hover effects) along with JavaScript coding for every scenario of the game. 
 
 ## Author
-Brandon Chamberlain - Apprentice Software Developer | [LinkedIn](https://www.linkedin.com/in/bchamberlain3618/) | [Personal Website](www.thebrandonchamberlain.com)
+Brandon Chamberlain - Apprentice Software Developer | [LinkedIn](https://www.linkedin.com/in/bchamberlain3618/) | [Personal Website](https://www.thebrandonchamberlain.com)
