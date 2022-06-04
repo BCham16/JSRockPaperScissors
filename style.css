@@ -64,32 +64,32 @@ html{
 }
 
 #playerRockButton{
-  background-image: url(/images/Rock.jpg);
+  background-image: url(Rock.jpg);
   background-size: 145px 145px;
 }
 
 #playerPaperButton{
-  background-image: url(/images/Paper.jpg);
+  background-image: url(Paper.jpg);
   background-size: 145px 145px;
 }
 
 #playerScissorsButton{
-  background-image: url(/images/Scissors.jpg);
+  background-image: url(Scissors.jpg);
   background-size: 145px 145px;
 }
 
 #computerRockButton{
-  background-image: url(/images/Rock.jpg);
+  background-image: url(Rock.jpg);
   background-size: 145px 145px;
 }
 
 #computerPaperButton{
-  background-image: url(/images/Paper.jpg);
+  background-image: url(Paper.jpg);
   background-size: 145px 145px;
 }
 
 #computerScissorsButton{
-  background-image: url(/images/Scissors.jpg);
+  background-image: url(Scissors.jpg);
   background-size: 145px 145px;
 }
 
