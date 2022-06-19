@@ -3,7 +3,7 @@
 
   ### Rock Paper Scissors developed with HTML/CSS/JavaScript
   
-![](Screenshot.png)
+ <img src= "Screenshot.png" width="400">
 
  ## Summary
  This was my first interactive JavaScript project. The intent was to focus on the functionality and progress in JavaScript 
